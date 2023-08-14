@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://rsms.me/inter/inter.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
+
+@media (prefers-color-scheme: dark) {}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: linear-gradient(180deg, #FFEEBA 0%, #FFDD87 100%);
+  width: 100%;
+}
+
+.home {
+  background-image: url('../public/home-bg.svg');
+  background-repeat: no-repeat;
+  background-position-y: -10rem;
+}
+
+.comp-one {
+  background-position-y: 10rem;
+  /* background-repeat: no-repeat; */
+}
+
+.merchant-one {
+  background-image: url('../public/merchants/bg-purple.svg');
+  background-repeat: no-repeat;
+  background-position-y: -4rem;
+  /* background-position-x: 3rem; */
+  background-position: absolute;
+  inset: 0;
+}
+
+.merchant-three {
+  background-image: url('../public/merchants/bg-purple-2.svg');
+  background-repeat: no-repeat;
+  background-position-y: 16rem;
+  inset: 0;
+}
+
+.dev-one {
+  background-image: url('../public/bg-gray.svg');
+  background-repeat: no-repeat;
+  background-position-y: -4rem;
+}
+
+.dev-two {
+  background-image: url('../public/devs/bg-gray-2.svg');
+  background-repeat: no-repeat;
+  /* background-position-y: rem; */
+  background-position: relative;
+  inset: 0;
+}
+
+
+@media (max-width: 820px) {
+  .merchant-one {
+    background-position-y: 10rem;
+  }
+
+  .dev-one {
+    background-position-x: 0rem;
+  }
+}
+
+@media (max-width: 512px) {
+  .home-two {
+    /* border: 1px solid gray; */
+    box-shadow: 0 0 25px 5px rgb(121, 121, 121);
+    padding-top: 1rem !important;
+  }
+}
+
+.home-two {
+  padding-top: 6rem;
+}
+
+.merchants {
+  background: linear-gradient(180deg, #f8f8f8 0%, #dcbfff 100%);
+}
+
+.devs {
+  background: linear-gradient(180deg, #F5F5F5 0%, #CDCDCD 100%);
+}
+
+.devs-3 {
+  /* background-image: url('/devs/bg-vector.svg'); */
+  background-repeat: no-repeat;
+}
+
+@font-face {
+  font-family: 'Rooney';
+  src: url('/fonts/rooney-bold.woff') format('woff');
+}
+
+.font-rooney {
+  font-family: 'rooney', sans-serif;
+}
+
+.light-font {
+  font-weight: 200 !important;
+}
